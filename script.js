@@ -1,6 +1,4 @@
-// =====================================
-// MENU MOBILE
-// =====================================
+
 
 const menuButton = document.getElementById("menu-btn");
 const menu = document.getElementById("menu");
@@ -10,7 +8,7 @@ menuButton.addEventListener("click", () => {
 });
 
 
-// Fechar o menu ao clicar em um link
+
 
 const links = document.querySelectorAll("#menu a");
 
@@ -25,9 +23,7 @@ links.forEach(link => {
 });
 
 
-// =====================================
-// CHECKLIST
-// =====================================
+
 
 const checkboxes = document.querySelectorAll(
     '.checklist input[type="checkbox"]'
@@ -76,9 +72,7 @@ function atualizarChecklist() {
 }
 
 
-// =====================================
-// QUIZ
-// =====================================
+
 
 const options = document.querySelectorAll(".option");
 
@@ -89,7 +83,7 @@ options.forEach(option => {
 
     option.addEventListener("click", () => {
 
-        // Desabilita todas as alternativas
+
 
         options.forEach(item => {
 
@@ -123,7 +117,7 @@ options.forEach(option => {
             quizResult.style.color = "#b42318";
 
 
-            // Destaca a resposta correta
+    
 
             options.forEach(item => {
 
@@ -142,9 +136,7 @@ options.forEach(option => {
 });
 
 
-// =====================================
-// ANIMAÇÃO AO ROLAR A PÁGINA
-// =====================================
+
 
 const elementos = document.querySelectorAll(
     ".card, .dilema, .solution-item"
